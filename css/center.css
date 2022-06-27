@@ -1,0 +1,456 @@
+body {
+  background-color: #f6f6f6;
+}
+
+
+.center-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto 85px;
+  /* background-color: pink; */
+}
+
+/* 侧边栏 */
+.center-wrapper .aside {
+  width: 227px;
+  background-color: #fff;
+}
+
+/* 改变主轴方向 更改主轴排列方向且水平垂直居中 */
+.center-wrapper .aside .user-meat {
+  display: flex;
+  flex-direction: column;
+  /* 垂直居中 */
+  justify-content: center;
+  /* 水平居中 */
+  align-items: center;
+  padding: 47px 0 32px 0;
+}
+
+/* 头像 图片 圆角头像 给边框圆角之后再溢出隐藏就可以了 */
+.center-wrapper .aside .pic {
+  overflow: hidden;
+  width: 85px;
+  height: 85px;
+  /* background-color: transparent; */
+  border-radius: 50%;
+}
+
+
+.center-wrapper .aside .pic img {
+  width: 85px;
+  height: 85px;
+  transition: all 2s;
+  /* 定义动画 */
+  animation: rotate 2s linear;
+}
+
+/* 鼠标经过头像旋转 */
+.center-wrapper .aside .pic:hover img {
+  transform: rotate(1turn);
+}
+
+/* 打开网页头像转圈 */
+@keyframes rotate {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+/* 名字 */
+.center-wrapper .aside .user-meat h4 {
+  padding: 12px 0 10px 0;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.center-wrapper .aside .user-meat a {
+  width: 93px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  color: #f9f9f9;
+  background-image: linear-gradient(264deg, #e05e2f 0%, #ea745e 95%);
+  border-radius: 13px;
+}
+
+.center-wrapper .aside .user-meat a i {
+  display: inline-block;
+  /* 中线对齐 */
+  vertical-align: middle;
+  width: 15px;
+  height: 16px;
+  background: url(../images/vip_gold.png);
+  /* 两倍图要缩小 */
+  background-size: 15px auto;
+}
+
+/* 我的账户 */
+.user-manage {
+  margin-top: 30px;
+  padding: 30px 0 0 50px;
+  border-top: 1px solid #f4f4f4;
+}
+
+.user-manage h4 {
+  font-size: 18px;
+  font-weight: normal;
+  color: #333333;
+}
+
+.user-manage .links a {
+  display: block;
+  font-size: 14px;
+  padding-top: 15px;
+  color: #666666;
+}
+
+.user-manage .links a::before {
+  display: inline-block;
+  content: '';
+  width: 8px;
+  height: 8px;
+  margin-right: 10px;
+  background-color: #5cb99e;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.user-manage .links a:hover::before {
+  opacity: 1;
+}
+
+.user-manage .links a:hover {
+  color: #5cb99e;
+}
+
+/* 侧边栏结束 */
+
+/* 页面主体 */
+.center-wrapper .main {
+  width: 999px;
+  /* background-color: pink; */
+}
+
+/* 概况模块 */
+.main .overview {
+  display: flex;
+  height: 132px;
+  padding: 20px 0;
+  margin-bottom: 22px;
+  background-color: #fff;
+}
+
+.main .overview div {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.main .overview .item:first-child {
+  border-right: 1px solid #f4f4f4;
+}
+
+.main .overview .item a {
+  color: #333333;
+}
+
+.main .overview .item a:hover {
+  color: #27ba9b;
+}
+
+.main .overview .item .vip {
+  transition: all 1.5s;
+  /* 打开页面转圈 */
+  animation: rotate 2s linear;
+}
+
+.main .overview .item .address {
+  transition: all 1s;
+  animation: move 2s linear;
+}
+
+/* 会员中心和安全设置转圈 */
+.main .overview .item a:hover .vip {
+  transform: rotate(1turn);
+}
+
+/* 地址管理往上位移 */
+.main .overview .item a:hover .address {
+  transform: translateY(-10px);
+}
+
+/* 打开页面位移 */
+@keyframes move {
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+.main .overview .item a p {
+  margin-top: 5px;
+}
+
+.main .overview .item a span {
+  font-size: 25px;
+  color: #e05e30;
+}
+
+/* 我的订单模块 */
+.pannel {
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+/* 我的足迹取消外边距 */
+.pannel:last-child {
+  margin-bottom: 0px;
+}
+
+/* 订单头部 */
+.pannel-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 0;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.pannel .pannel-header h4 {
+  font-size: 22px;
+  font-weight: normal;
+  color: #333333;
+}
+
+.pannel .pannel-header a {
+  color: #999999;
+}
+
+.pannel .pannel-header a:hover {
+  color: #27ba9b;
+}
+
+/* 订单详情 */
+.pannel-orders .orders li {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #f4f4f4;
+}
+
+.pannel-orders .orders li:first-child {
+  border-top: none;
+  margin-bottom: 20px;
+}
+
+.pannel-orders .orders .goods {
+  flex: 1;
+  display: flex;
+  width: 107px;
+  height: 107px;
+}
+
+.pannel-orders .orders .goods img {
+  width: 107px;
+  height: 107px;
+}
+
+.pannel-orders .orders .all {
+  display: flex;
+  /* 改变主轴方向 */
+  flex-direction: column;
+  /* 垂直居中 */
+  justify-content: center;
+  /* 水平居中 */
+  align-items: center;
+  font-size: 14px;
+  color: #333333;
+}
+
+.pannel-orders .orders .goods .text {
+  display: flex;
+  /* 改变主轴方向 */
+  flex-direction: column;
+  /* 垂直居中 */
+  justify-content: center;
+  font-size: 16px;
+  color: #333333;
+
+}
+
+.pannel-orders .orders .goods .text span {
+  margin-top: 5px;
+}
+
+.pannel-orders .orders .status {
+  width: 200px;
+  border-right: 1px solid #e8e8e8;
+}
+
+.pannel-orders .orders .status p {
+  color: #e05e30;
+}
+
+.pannel-orders .orders .status .select {
+  color: #999999;
+}
+
+.pannel-orders .orders .status .select:hover {
+  color: #27ba9b;
+}
+
+.pannel-orders .orders .pay {
+  width: 200px;
+  border-right: 1px solid #e8e8e8;
+
+}
+
+.pannel-orders .orders .pay span {
+  color: #9a2e1f;
+}
+
+.pannel-orders .orders .action {
+  width: 180px;
+}
+
+.pannel-orders .orders .action .pay {
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background-color: #5eb69c;
+  border-radius: 2px;
+  color: #fff;
+  /* 鼠标经过出现过渡效果 */
+  transition: 1s;
+}
+
+.pannel-orders .orders .action a {
+  color: #333333;
+  margin-top: 10px;
+}
+
+.pannel-orders .orders .action .pay:hover {
+  border: 1px solid #27ba9b;
+  background-color: #fff;
+  color: #27ba9b;
+}
+
+.pannel-orders .orders .action a:hover {
+  color: #27ba9b;
+}
+
+/* 收藏的商品 */
+.panel-collect .item {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.panel-collect .item a {
+  position: relative;
+  margin-top: 35px;
+  font-size: 16px;
+  transition: 1s;
+}
+
+.panel-collect .item a:hover {
+  border: 1px solid #27ba9b;
+  box-shadow: 3px 0 3px 3px rgba(0, 0, 0, .3);
+  transform: scale(1.1);
+}
+
+/* 折扣定位 */
+.panel-collect .item .discount {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 28px;
+  height: 60px;
+  text-align: center;
+  font-size: 20px;
+  color: #5eb69c;
+  border: solid 1px #5eb69c;
+  border-radius: 3px;
+}
+
+.panel-collect .item .pic {
+  width: 160px;
+  height: 160px;
+}
+
+.panel-collect .item .pic img {
+  width: 160px;
+  height: 160px;
+}
+
+.panel-collect .item p {
+  color: #333333;
+}
+
+.panel-collect .item span {
+  font-size: 17px;
+  color: #9a2e1f;
+}
+
+.panel-collect .item span i {
+  font-size: 22px;
+}
+
+/* 收藏的商品 */
+.panel-commodity .item {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.panel-commodity .item a {
+  position: relative;
+  margin-top: 35px;
+  font-size: 16px;
+  transition: 1s;
+}
+
+.panel-commodity .item a:hover {
+  border: 1px solid #27ba9b;
+  box-shadow: 3px 0 3px 3px rgba(0, 0, 0, .3);
+  transform: scale(1.1);
+}
+
+/* 折扣定位 */
+.panel-commodity .item .discount {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 28px;
+  height: 60px;
+  text-align: center;
+  font-size: 20px;
+  color: #5eb69c;
+  border: solid 1px #5eb69c;
+  border-radius: 3px;
+}
+
+.panel-commodity .item .pic {
+  width: 160px;
+  height: 160px;
+}
+
+.panel-commodity .item .pic img {
+  width: 160px;
+  height: 160px;
+}
+
+.panel-commodity .item p {
+  color: #333333;
+}
+
+.panel-commodity .item span {
+  font-size: 17px;
+  color: #9a2e1f;
+}
+
+.panel-commodity .item span i {
+  font-size: 22px;
+}
