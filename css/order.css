@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font: 16px/1.5 sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+li {
+  list-style: none;
+}
+em,
+i {
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+a:hover {
+  color: #5eb69c;
+}
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+input,
+button {
+  padding: 0;
+  border: none;
+  outline: none;
+  color: #333;
+}
+/* 清除浮动 */
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+body {
+  background-color: #f7f7f8;
+}
+.main {
+  padding: 3.2vw 3.2vw 21.3333vw;
+}
+.main > div {
+  width: 94.4vw;
+  margin-top: 2.6667vw;
+  padding: 0vw 3.7333vw;
+  background-color: #fff;
+  border-radius: 1.3333vw;
+}
+.main .order-msg {
+  display: flex;
+  padding-right: 0;
+}
+.main .order-msg .location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8vw;
+  height: 8vw;
+  margin: 5.3333vw 0;
+  line-height: 8vw;
+  background-image: linear-gradient(90deg, #6fc2aa 5%, #54b196 100%);
+  border-radius: 50%;
+}
+.main .order-msg .location .icon-location {
+  font-size: 3.7333vw;
+  color: #fff;
+}
+.main .order-msg .msg-info {
+  flex: 1;
+  font-size: 3.2vw;
+  padding: 0vw 3.7333vw;
+}
+.main .order-msg .msg-info span {
+  font-size: 3.4667vw;
+}
+.main .order-msg .msg-info span i {
+  font-size: 4vw;
+}
+.main .order-msg .more {
+  width: 11.7333vw;
+  height: 11.7333vw;
+  text-align: center;
+  margin-top: 4vw;
+  line-height: 11.7333vw;
+}
+.main .goods {
+  display: flex;
+  margin-top: 2.9333vw;
+}
+.main .goods .pic {
+  width: 22.6667vw;
+  height: 22.6667vw;
+  border-radius: 0.5333vw;
+}
+.main .goods .pic img {
+  width: 22.6667vw;
+  height: 22.6667vw;
+}
+.main .goods .goods-info {
+  flex: 1;
+  padding-left: 3.7333vw;
+}
+.main .goods .goods-info h3 {
+  font-size: 3.4667vw;
+  font-weight: 400;
+}
+.main .goods .goods-info span {
+  font-size: 3.4667vw;
+  line-height: 1.3333vw;
+}
+.main .goods .goods-info div {
+  display: inline-block;
+  background-color: #f7f7f8;
+  border-radius: 0.5333vw;
+  font-size: 2.9333vw;
+  color: #888888;
+}
+.main .goods .goods-info p {
+  font-size: 2.4vw;
+  color: #cf4444;
+}
+.main .goods .goods-info p span {
+  font-size: 4.2667vw;
+}
+.main .goods .goods-info p del {
+  color: #999999;
+}
+.main .goods .count {
+  margin-top: 8vw;
+}
+.main .panel > div {
+  display: flex;
+  justify-content: space-between;
+  line-height: 9.3333vw;
+  font-size: 3.4667vw;
+}
+.main .panel .remark {
+  display: flex;
+  justify-content: flex-start;
+}
+.main .panel .remark .leave {
+  flex: 1;
+  margin-left: 5.3333vw;
+  font-size: 3.2vw;
+  color: #999;
+}
+.main .panel .payment .iconfont {
+  font-size: 3.4667vw;
+}
+.amont .price {
+  color: #cf4444;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 0 2.6667vw;
+  width: 100%;
+  height: 21.3333vw;
+  background-color: #fff;
+}
+.footer .price {
+  font-size: 2.9333vw;
+}
+.footer .price span {
+  font-size: 4.8vw;
+  color: #cf4444;
+}
+.footer .price span i {
+  font-size: 5.3333vw;
+  font-weight: 800;
+}
+.footer .pay {
+  width: 24.2667vw;
+  height: 9.3333vw;
+  text-align: center;
+  font-size: 3.4667vw;
+  line-height: 9.3333vw;
+  background-image: linear-gradient(90deg, #6fc2aa 5%, #54b196 100%);
+  border-radius: 0.8vw;
+}
+.footer .pay a {
+  display: block;
+  width: 24.2667vw;
+  height: 9.3333vw;
+  color: #ffffff;
+}

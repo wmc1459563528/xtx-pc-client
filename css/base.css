@@ -1,0 +1,67 @@
+/* 去除内外边距 盒子自减 */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px/1.5 'Helvetica Neue', Helvetica, Arial, 'Microsoft Yahei', 'Hiragino Sans GB', 'Heiti SC',
+    'WenQuanYi Micro Hei', sans-serif;
+  color: #333;
+}
+
+/* 去点 */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 去除字体的默认倾斜效果 */
+em,
+i {
+  font-style: normal;
+}
+
+/* 设置img的垂直对齐方式，为了去除img默认下间隙 */
+img {
+  vertical-align: middle;
+}
+
+/* 去除input默认样式 */
+input {
+  border: none;
+  outline: none;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 左浮动 */
+.fl {
+  float: left;
+}
+
+/* 右浮动 */
+.fr {
+  float: right;
+}
+
+/* 双为元素清除 */
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* 版心 */
+.w {
+  width: 1240px;
+  margin: 0 auto;
+}

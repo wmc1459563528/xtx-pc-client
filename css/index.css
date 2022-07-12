@@ -1,0 +1,511 @@
+/* 主题部分 */
+.xtx-banner {
+  height: 500px;
+  background: #f5f5f5;
+}
+
+.xtx-banner .w {
+  height: 100%;
+  position: relative;
+}
+
+.xtx-banner .w .nav {
+  position: relative;
+  height: 100%;
+}
+
+.xtx-banner .nav li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  /* 这里实现淡入淡出的关键 */
+  transition: all 2s;
+}
+
+.xtx-banner .nav li img {
+  width: 1240px;
+  height: 500px;
+}
+
+.xtx-banner .nav .active {
+  opacity: 1;
+}
+
+.xtx-banner .w .banner-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 251px;
+  height: 500px;
+  background: rgba(0, 0, 0, .8);
+  /* float: left; */
+}
+
+.xtx-banner .w .banner-left ul {
+  height: 100%;
+  height: 50px;
+  /* transition: all 1s; */
+}
+
+.xtx-banner .w .banner-left ul li {
+  height: 100%;
+  line-height: 50px;
+  padding-left: 35px;
+  color: #fff;
+  transition: all 1s;
+}
+
+.xtx-banner .w .banner-left ul li a {
+  display: inline-block;
+  height: 100%;
+  color: #fff;
+  transition: all .3s;
+}
+
+.xtx-banner .w .banner-left ul li i {
+  float: right;
+  height: 100%;
+  padding-right: 20px;
+  transition: all .3s;
+}
+
+/* 鼠标经过动画 */
+.xtx-banner .w .banner-left ul li:hover i {
+  transform: translateY(-5px);
+  /* 1turn === 1圈 === 360度 */
+  transform: rotate(-1turn);
+}
+
+.xtx-banner .w .banner-left ul li:hover a {
+  transform: translateX(8px);
+  /* color: #333333; */
+}
+
+.xtx-banner .w .banner-left ul li:hover {
+  background-color: #27ba9b;
+  cursor: pointer;
+}
+
+/* 右边轮播键头和小圆点 */
+.xtx-banner .w .banner-right .prev {
+  position: absolute;
+  top: 50%;
+  left: 260px;
+  width: 45px;
+  height: 45px;
+  background: rgba(0, 0, 0, .3);
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 45px;
+}
+
+
+
+.xtx-banner .w .banner-right .next {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 45px;
+  height: 45px;
+  /* font-size: 30px; */
+  background: rgba(0, 0, 0, .3);
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 45px;
+}
+
+.xtx-banner .w .banner-right .iconfont {
+  font-size: 20px;
+}
+
+/* 鼠标经过变色 */
+.xtx-banner .w .banner-right .prev:hover i {
+  color: #27ba9b;
+}
+
+.xtx-banner .w .banner-right .next:hover i {
+  color: #27ba9b;
+}
+
+.xtx-banner .w .banner-right ul {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  height: 10px;
+}
+
+.xtx-banner .w .banner-right ul li {
+  float: left;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background: rgba(255, 255, 255, .3);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.xtx-banner .w .banner-right .active {
+  background: rgba(255, 255, 255, 1);
+}
+
+/* 新鲜好物、人气推荐 */
+.xtx-fresh {
+  height: 520px;
+  /* background-color: pink; */
+  padding-top: 50px;
+}
+
+.xtx-fresh .xtx-font {
+  width: 100%;
+}
+
+.xtx-fresh .xtx-font h3 {
+  font-size: 29px;
+  font-weight: normal;
+  color: #333333;
+}
+
+.xtx-fresh .xtx-font p,
+.xtx-fresh .xtx-font a {
+  padding-top: 15px;
+  font-size: 16px;
+  color: #999;
+}
+
+.xtx-fresh .xtx-font p {
+  margin-left: 35px;
+}
+
+.xtx-fresh .xtx-font a:hover {
+  color: #27ba9b;
+}
+
+/* 新鲜好物 */
+.xtx-fresh .xtx-commodity {
+  width: 100%;
+  height: 405px;
+  margin-top: 30px;
+}
+
+.xtx-fresh .xtx-commodity .item {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 305px;
+  margin-right: 5px;
+  text-align: center;
+  background-color: #f0f9f4;
+  transition: 1s;
+}
+
+.xtx-fresh .xtx-commodity .item:hover {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, .5);
+  transform: translateY(-5px);
+}
+
+.xtx-fresh .xtx-commodity .item img {
+  width: 100%;
+  height: 305px;
+}
+
+.xtx-fresh .xtx-commodity .item .font {
+  font-size: 21px;
+  color: #333333;
+
+}
+
+.xtx-fresh .xtx-commodity .item .price {
+  font-size: 23px;
+  color: #9a2e1f;
+}
+
+.xtx-fresh .xtx-commodity .item .new {
+  position: absolute;
+  top: 18px;
+  left: 17px;
+  width: 28px;
+  height: 55px;
+  font-size: 18px;
+  color: #27ba9b;
+  border: 2px solid #27ba9b;
+  border-radius: 5px;
+}
+
+/* 人气推荐 */
+.xtx-fresh .xtx-recommend {
+  width: 100%;
+  height: 405px;
+  margin-top: 30px;
+}
+
+.xtx-fresh .xtx-recommend .item {
+  float: left;
+  height: 100%;
+  width: 305px;
+  margin-right: 5px;
+  text-align: center;
+  transition: 1s;
+}
+
+.xtx-fresh .xtx-recommend .item:hover {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, .5);
+  transform: translateY(-5px);
+}
+
+.xtx-fresh .xtx-recommend .item img {
+  width: 100%;
+  height: 305px;
+}
+
+.xtx-fresh .xtx-recommend .item .font {
+  font-size: 20px;
+  color: #333333;
+
+}
+
+.xtx-fresh .xtx-recommend .item .describe {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #999999;
+}
+
+/* 热门品牌 */
+.xtx-hot {
+  height: 470px;
+  background-color: #f5f5f5;
+  margin-top: 35px;
+}
+
+.xtx-hot .w {
+  height: 100%;
+  position: relative;
+}
+
+.xtx-hot .w .hot-left h3 {
+  margin-top: 40px;
+  font-size: 29px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.xtx-hot .w .hot-left p {
+  margin-left: 35px;
+  padding-top: 55px;
+  font-size: 16px;
+  color: #999999;
+}
+
+.xtx-hot .hot-right {
+  width: 50px;
+  height: 50px;
+}
+
+.xtx-hot .hot-right p {
+  float: left;
+  margin-top: 60px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  background-color: #e2e2e2;
+  color: #fff;
+  cursor: pointer;
+
+}
+
+.xtx-hot .hot-right p:last-child {
+  margin-left: 10px;
+  background-color: #27ba9b;
+}
+
+.xtx-hot .img {
+  margin-top: 15px;
+}
+
+.xtx-hot .img img {
+  padding-right: 5px;
+  width: 244px;
+  height: 306px;
+  transition: 1s;
+}
+
+.xtx-hot .img img:hover {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, .5);
+  transform: translateY(-5px);
+}
+
+.xtx-seafood {
+  height: 720px;
+}
+
+.xtx-seafood .seafood-font {
+  height: 40px;
+  width: 100%;
+  margin-top: 35px;
+  position: relative;
+}
+
+.xtx-seafood .seafood-font h3 {
+  float: left;
+  font-size: 29px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.xtx-seafood .seafood-font .seafood-list {
+  position: absolute;
+  bottom: 0px;
+  right: 160px;
+  width: 500px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.xtx-seafood .seafood-font .seafood-list li {
+  float: left;
+  margin: 0px 10px;
+  width: 50px;
+}
+
+.xtx-seafood .seafood-font .seafood-list li a {
+  float: left;
+  font-size: 16px;
+  width: 50px;
+  color: #333333;
+}
+
+.xtx-seafood .seafood-font .seafood-list li:hover a {
+  background-color: #27ba9b;
+  color: #fff;
+}
+
+.xtx-seafood .seafood-font .all {
+  float: right;
+  margin-top: 10px;
+  color: #999999;
+
+}
+
+.xtx-seafood .seafood-font .all:hover {
+  color: #27ba9b;
+}
+
+.seafood-pic {
+  margin-top: 30px;
+}
+
+/* 左侧图片 */
+.seafood-pic .seafoot-left img {
+  width: 242px;
+  height: 617px;
+  transition: 1s;
+}
+
+.seafood-pic .seafoot-left img:hover {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, .5);
+  transform: translateY(-5px);
+}
+
+/* 右侧商品 */
+.seafood-pic .seafoot-right {
+  width: 968px;
+  height: 617px;
+  margin-left: 30px;
+}
+
+/* 每一个商品 */
+.seafood-pic .seafoot-right .item {
+  position: relative;
+  width: 205px;
+  height: 292px;
+  margin-right: 23px;
+  border: 1px solid transparent;
+  transition: all 1.5s;
+}
+
+.seafood-pic .seafoot-right .item:hover {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, .5);
+}
+
+/* 第一个和第五个左外边距 */
+.seafood-pic .seafoot-right .item:first-child,
+.seafood-pic .seafoot-right .item:nth-child(5n) {
+  margin-left: 30px;
+}
+
+.seafood-pic .seafoot-right .item:nth-child(4n) {
+  margin-right: 0px;
+}
+
+/* 第五个之后的上外边距 */
+.seafood-pic .seafoot-right .item:nth-child(n+5) {
+  margin-top: 23px;
+}
+
+/* 生鲜右侧图片 */
+.seafood-pic .seafoot-right .item img {
+  width: 184px;
+  height: 184px;
+}
+
+/* 文字描述 */
+.seafood-pic .seafoot-right .item .brief,
+.seafood-pic .seafoot-right .item .price {
+  padding-left: 20px;
+}
+
+/* 描述 */
+.seafood-pic .seafoot-right .item .brief {
+  font-size: 16px;
+  color: #333333;
+}
+
+/* 海鲜价格 */
+.seafood-pic .seafoot-right .item .price {
+  font-size: 22px;
+  color: #9a2e1f;
+}
+
+/* 隐藏 找相似 */
+.seafood-pic .seafoot-right .find {
+  opacity: 0;
+  position: absolute;
+  bottom: -2px;
+  width: 204px;
+  height: 84px;
+  margin-left: -1px;
+  background-color: #27ba9b;
+  text-align: center;
+  transition: all 1.5s;
+}
+
+/* 找相似 */
+.seafood-pic .seafoot-right .find .one {
+  width: 173px;
+  height: 40px;
+  padding-top: 15px;
+  margin-left: 15px;
+}
+
+.seafood-pic .seafoot-right .find p a {
+  color: #fff;
+}
+
+/* 发现更多 */
+.seafood-pic .seafoot-right .find .two a {
+  font-size: 13px;
+}
+
+/* 鼠标经过item 显示找相似 */
+.seafood-pic .seafoot-right .item:hover .find {
+  opacity: 1;
+}
+
+/* 鼠标经过item 显示边框 */
+.seafood-pic .seafoot-right .item:hover {
+  border: 2px solid #27ba9b;
+  cursor: pointer;
+}

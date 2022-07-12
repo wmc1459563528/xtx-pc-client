@@ -1,0 +1,212 @@
+@import './base.less';
+
+body {
+  background-color: #f7f7f8;
+}
+
+// 主体部分
+.main {
+  padding: 3.2vw 3.2vw 21.3333vw;
+
+  // 整体样式
+  &>div {
+    width: 94.4vw;
+    margin-top: 2.6667vw;
+    padding: 0vw 3.7333vw;
+    background-color: #fff;
+    border-radius: 1.3333vw;
+  }
+
+  // 个人信息
+  .order-msg {
+    display: flex;
+    padding-right: 0;
+
+    // 位置信息
+    .location {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 8vw;
+      height: 8vw;
+      margin: 5.3333vw 0;
+      line-height: 8vw;
+      background-image: linear-gradient(90deg,
+          #6fc2aa 5%,
+          #54b196 100%);
+      border-radius: 50%;
+
+      .icon-location {
+        font-size: 3.7333vw;
+        color: #fff;
+      }
+    }
+
+    .msg-info {
+      flex: 1;
+      font-size: 3.2vw;
+      padding: 0vw 3.7333vw;
+
+      span {
+        font-size: 3.4667vw;
+
+        i {
+          font-size: 4vw;
+        }
+      }
+    }
+
+    .more {
+      width: 11.7333vw;
+      height: 11.7333vw;
+      text-align: center;
+      margin-top: 4vw;
+      line-height: 11.7333vw;
+      // background-color: pink;
+    }
+  }
+
+  // 商品信息
+  .goods {
+    display: flex;
+    margin-top: 2.9333vw;
+
+    .pic {
+      width: 22.6667vw;
+      height: 22.6667vw;
+      border-radius: 0.5333vw;
+
+      img {
+        width: 22.6667vw;
+        height: 22.6667vw;
+      }
+
+    }
+
+    .goods-info {
+      flex: 1;
+      padding-left: 3.7333vw;
+
+      h3 {
+        font-size: 3.4667vw;
+        font-weight: 400;
+      }
+
+      span {
+        font-size: 3.4667vw;
+        line-height: 1.3333vw;
+      }
+
+      div {
+        // 转为行内块  因为这个字体不一定每个都是这么多
+        display: inline-block;
+        background-color: #f7f7f8;
+        border-radius: 0.5333vw;
+        font-size: 2.9333vw;
+        color: #888888;
+      }
+
+      p {
+        font-size: 2.4vw;
+        color: #cf4444;
+
+        span {
+          font-size: 4.2667vw;
+        }
+
+        del {
+          color: #999999;
+        }
+      }
+    }
+
+    .count {
+      margin-top: 8vw;
+    }
+  }
+
+  // 配送模块
+  .panel {
+    &>div {
+      display: flex;
+      justify-content: space-between;
+      line-height: 9.3333vw;
+      font-size: 3.4667vw;
+    }
+
+    .remark {
+      display: flex;
+      justify-content: flex-start;
+
+      .leave {
+        flex: 1;
+        margin-left: 5.3333vw;
+        font-size: 3.2vw;
+        color: #999;
+      }
+
+    }
+
+    .payment {
+      .iconfont {
+        font-size: 3.4667vw;
+      }
+    }
+  }
+}
+
+// 商品价格模块
+.amont {
+  .price {
+    color: #cf4444;
+  }
+}
+
+// 底部模块
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 0 2.6667vw;
+  width: 100%;
+  height: 21.3333vw;
+  background-color: #fff;
+
+  // 左侧价格模块
+  .price {
+    font-size: 2.9333vw;
+
+    span {
+      font-size: 4.8vw;
+      color: #cf4444;
+
+      i {
+        font-size: 5.3333vw;
+        font-weight: 800;
+      }
+    }
+  }
+
+  // 右侧支付模块
+  .pay {
+    width: 24.2667vw;
+    height: 9.3333vw;
+    text-align: center;
+    font-size: 3.4667vw;
+    line-height: 9.3333vw;
+    background-image: linear-gradient(90deg,
+        #6fc2aa 5%,
+        #54b196 100%);
+    border-radius: 0.8vw;
+
+    a {
+      display: block;
+      width: 24.2667vw;
+      height: 9.3333vw;
+      color: #ffffff;
+    }
+  }
+}

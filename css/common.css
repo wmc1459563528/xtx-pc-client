@@ -1,0 +1,555 @@
+/* 头部 */
+.xtx-shortcut {
+  height: 50px;
+  background-color: #333333;
+}
+
+.xtx-shortcut .w {
+  height: 50px;
+}
+
+.xtx-shortcut .top-nav {
+  /* position: absolute;
+  top: 0px;
+  right: 0px; */
+  height: 50px;
+}
+
+.xtx-shortcut .top-nav li {
+  position: relative;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+
+}
+
+.xtx-shortcut .top-nav li a {
+  width: 56px;
+  height: 14px;
+  font-size: 14px;
+  color: #dcdcdc;
+  padding: 0 15px;
+  border-left: 1px solid #666;
+
+}
+
+
+.xtx-shortcut .top-nav li a:hover {
+  color: #27ba9b;
+}
+
+
+/* 去掉最好一个右内边距 */
+.xtx-shortcut .top-nav li:last-child a {
+  padding-right: 0;
+}
+
+/* 联系我 */
+.xtx-shortcut .top-nav .about a::after {
+  position: absolute;
+  top: 60px;
+  left: -100px;
+  content: '';
+  width: 150px;
+  height: 150px;
+  background: url(../uploads/lianxiwo\ .jpg);
+  background-size: 100% 100%;
+  /* 提升层级 */
+  z-index: 1;
+  display: none;
+  /* opacity: 0; */
+  /* transition: all 1s; */
+}
+
+.xtx-shortcut .w .top-nav .about a::before {
+  position: absolute;
+  top: 40px;
+  left: 25px;
+  content: '';
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #e7e7e7;
+  /* opacity: 0; */
+  display: none;
+  /* transition: all 1s; */
+}
+
+.xtx-shortcut .w .top-nav .about:hover a::before,
+.xtx-shortcut .w .top-nav .about:hover a::after {
+  /* opacity: 1; */
+  display: block;
+}
+
+/* 关注我 */
+.xtx-shortcut .top-nav .concern a::before {
+  /* content: '';
+  display: inline-block;
+  width: 11px;
+  height: 16px;
+  使用margin的单方向设置
+  margin-top: -3px;
+  margin-right: 8px;
+  background-color: red;
+  background: url('../images/sprites.png') -160px -69px;
+  垂直对齐方式为居中对齐
+  vertical-align: middle; */
+  position: absolute;
+  top: 60px;
+  left: 25px;
+  content: '';
+  width: 150px;
+  height: 150px;
+  background: url(../uploads/guanzhuwo.jpg);
+  background-size: 100% 100%;
+  /* 提升层级 */
+  z-index: 1;
+  /* opacity: 0;
+  transition: all 1s; */
+  display: none;
+}
+
+.xtx-shortcut .top-nav .concern a::after {
+  position: absolute;
+  top: 40px;
+  left: 25px;
+  content: '';
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #e7e7e7;
+  /* opacity: 0;
+  transition: all 1s; */
+  display: none;
+}
+
+.xtx-shortcut .top-nav .concern:hover a::before,
+.xtx-shortcut .top-nav .concern:hover a::after {
+  /* opacity: 1; */
+  display: block;
+}
+
+.xtx-shortcut .top-nav .concern {
+  width: 80px;
+}
+
+/* 第一个a边框取消 */
+.xtx-shortcut .top-nav li:first-child a {
+  border: none;
+}
+
+/* xtx-main-nav */
+.xtx-main-nav {
+  height: 130px;
+  padding-top: 30px;
+  /* background-color: skyblue; */
+  /* position: relative; */
+}
+
+/* logo */
+.xtx-main-nav .xtx-logo {
+  width: 207px;
+  height: 70px;
+}
+
+.xtx-main-nav .xtx-logo a {
+  float: left;
+  width: 207px;
+  height: 70px;
+  line-height: 70px;
+  background: url(../images/logo.png) no-repeat left;
+  background-size: 100% 100%;
+  font-size: 0px;
+}
+
+.xtx-main-nav .main-nav-font {
+  height: 70px;
+  line-height: 70px;
+  margin-left: 30px;
+}
+
+.xtx-main-nav .main-nav-font li {
+  float: left;
+  height: 70px;
+  margin: 0 15px;
+  padding: 0 8px;
+}
+
+.xtx-main-nav .main-nav-font li a {
+  float: left;
+  color: #333333;
+  height: 55px;
+}
+
+.xtx-main-nav .main-nav-font li:hover a {
+  color: #27ba9b;
+  border-bottom: 1px solid #27ba9b;
+}
+
+/* search */
+.xtx-main-nav .main-search {
+  /* width: 172px; */
+  height: 31px;
+  /* background-color: pink; */
+  margin-top: 20px;
+  margin-left: 40px;
+  position: relative;
+}
+
+/* 搜索框前的放大镜 */
+.xtx-main-nav .main-search::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 18px;
+  height: 17px;
+  background: url(../images/sprites.png) no-repeat -80px -70px;
+}
+
+.xtx-main-nav .main-search input {
+  width: 172px;
+  height: 30px;
+  padding-left: 25px;
+  border: none;
+  border-bottom: 2px solid #e7e7e7;
+  border-radius: 15px;
+  outline: none;
+}
+
+.xtx-main-nav .main-search .car {
+  float: right;
+  width: 22px;
+  height: 23px;
+  background: url(../images/sprites.png) no-repeat -120px -70px;
+  margin-top: 5px;
+  position: relative;
+}
+
+.xtx-main-nav .main-search .car span {
+  position: absolute;
+  top: -7px;
+  right: -13px;
+  width: 20px;
+  height: 15px;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 15px;
+  color: #fff;
+  background-color: #e26237;
+  font-size: 13px;
+}
+
+/* 底部 */
+.xtx-footer {
+  position: relative;
+  height: 300px;
+  /* background-color: pink; */
+  margin-top: 80px;
+}
+
+.xtx-footer .footer-server {
+  position: absolute;
+  top: 75px;
+  left: 60px;
+  width: 192px;
+  height: 143px;
+  text-align: center;
+  color: #999;
+  /* background-color: skyblue; */
+}
+
+.service,
+.question,
+.number,
+.weibo {
+  cursor: pointer;
+}
+
+
+
+.xtx-footer .footer-server div {
+  margin-top: 35px;
+}
+
+.xtx-footer .service::before {
+  content: "";
+  position: absolute;
+  top: 75px;
+  left: 45px;
+  transform: translateX(-50%);
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url(../images/sprites.png) no-repeat -250px -71px;
+}
+
+.xtx-footer .footer-server .service {
+  float: left;
+  width: 90px;
+  height: 90px;
+  padding-top: 50px;
+  margin-left: 5px;
+  color: #999;
+  font-size: 14px;
+  border: 1px solid #eeeeee;
+}
+
+
+.xtx-footer .footer-server .question {
+  float: left;
+  width: 90px;
+  height: 90px;
+  padding-top: 50px;
+  margin-left: 5px;
+  color: #999;
+  font-size: 14px;
+  border: 1px solid #eeeeee;
+}
+
+.xtx-footer .question::before {
+  content: "";
+  position: absolute;
+  top: 75px;
+  right: 50px;
+  transform: translateX(50%);
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url(../images/sprites.png) no-repeat -351px -71px;
+}
+
+/* 关注我们 */
+.xtx-footer .footer-we {
+  position: absolute;
+  top: 75px;
+  left: 360px;
+  width: 192px;
+  height: 143px;
+  /* margin-left: 310px; */
+  text-align: center;
+  color: #999;
+}
+
+.xtx-footer .footer-we div {
+  margin-top: 35px;
+}
+
+.xtx-footer .number::before {
+  content: "";
+  position: absolute;
+  top: 75px;
+  left: 50px;
+  transform: translateX(-50%);
+  display: inline-block;
+  width: 40px;
+  height: 30px;
+  background: url(../images/sprites.png) no-repeat -250px -15px;
+}
+
+.xtx-footer .footer-we .number {
+  float: left;
+  width: 90px;
+  height: 90px;
+  padding-top: 50px;
+  margin-left: 5px;
+  color: #999;
+  font-size: 14px;
+  border: 1px solid #eeeeee;
+}
+
+
+.xtx-footer .footer-we .weibo {
+  float: left;
+  width: 90px;
+  height: 90px;
+  padding-top: 50px;
+  margin-left: 5px;
+  color: #999;
+  font-size: 14px;
+  border: 1px solid #eeeeee;
+}
+
+.xtx-footer .weibo::before {
+  content: "";
+  position: absolute;
+  top: 75px;
+  right: 45px;
+  transform: translateX(50%);
+  display: inline-block;
+  width: 40px;
+  height: 30px;
+  background: url(../images/sprites.png) no-repeat -350px -15px;
+}
+
+.xtx-footer .service:hover,
+.xtx-footer .question:hover,
+.xtx-footer .number:hover,
+.xtx-footer .weibo:hover {
+  color: #27ba9b;
+}
+
+/* 扫码下载 */
+.xtx-footer .footer-download {
+  position: absolute;
+  top: 75px;
+  right: 260px;
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  color: #999;
+  border-right: 2px solid #f2f2f2;
+}
+
+.xtx-footer .footer-download div {
+  margin-top: 35px;
+}
+
+.xtx-footer .footer-download .code {
+  float: left;
+  width: 120px;
+  height: 120px;
+  border: 1px solid #eeeeee;
+}
+
+.xtx-footer .footer-download .code img {
+  width: 105px;
+  height: 103px;
+}
+
+.xtx-footer .footer-download .download p {
+  float: left;
+  color: #999;
+  font-size: 14px;
+  padding-left: 20px;
+}
+
+.xtx-footer .footer-download .download a {
+  float: left;
+  width: 103px;
+  height: 32px;
+  margin-top: 10px;
+  margin-left: 20px;
+  line-height: 32px;
+  color: #fff;
+  background-color: #27ba9b;
+  border: 1px solid #27ba9b;
+  transition: all 1s;
+}
+
+.xtx-footer .footer-download .download a:hover {
+  color: #27ba9b;
+  background-color: #f5f5f5;
+}
+
+.xtx-footer .footer-hotline {
+  width: 200px;
+  height: 122px;
+  text-align: center;
+  color: #999;
+  margin-top: 75px;
+}
+
+.xtx-footer .footer-hotline p {
+  font-size: 16px;
+  margin-bottom: 60px;
+}
+
+.xtx-footer .footer-hotline span {
+  font-size: 14px;
+  padding-top: 15px;
+}
+
+.xtx-footer .footer-hotline div {
+  color: #666;
+  font-size: 22px;
+}
+
+/* 底部菜单 */
+.xtx-bottom {
+  height: 350px;
+  background-color: #333333;
+}
+
+.xtx-bottom .w {
+  height: 100%;
+  /* background-color: pink; */
+}
+
+.xtx-bottom .bottom-service {
+  width: 100%;
+  height: 175px;
+  border-bottom: 3px solid #434343;
+}
+
+.xtx-bottom .bottom-service .bottom-box a {
+  float: left;
+  width: 30%;
+  line-height: 175px;
+  font-size: 28px;
+  color: #ffffff;
+}
+
+.xtx-bottom .bottom-service .bottom-box a:first-child {
+  margin-left: 120px;
+}
+
+.xtx-bottom .bottom-service .bottom-box a::before {
+  content: '';
+  display: inline-block;
+  width: 58px;
+  height: 58px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.xtx-bottom .bottom-service .bottom-box a:first-child::before {
+  background: url(../images/sprites.png) no-repeat 0 0;
+}
+
+.xtx-bottom .bottom-service .bottom-box a:nth-child(2):before {
+  background: url(../images/sprites.png) no-repeat -65px 0;
+}
+
+.xtx-bottom .bottom-service .bottom-box a:last-child::before {
+  background: url(../images/sprites.png) no-repeat -131px 0;
+}
+
+.xtx-bottom .bottom-copyright {
+  width: 700px;
+  height: 48px;
+  text-align: center;
+  margin: 40px auto;
+  /* background-color: skyblue; */
+  color: #999999;
+}
+
+.xtx-bottom .bottom-copyright ul {
+  /* width: 100%; */
+  height: 100%;
+}
+
+.xtx-bottom .bottom-copyright ul li {
+  float: left;
+  height: 48px;
+  width: 90px;
+}
+
+.xtx-bottom .bottom-copyright ul li a {
+  float: left;
+  width: 90px;
+  height: 20px;
+  margin-top: 15px;
+  padding: 0 5px;
+  font-size: 14px;
+  color: #999999;
+  border-right: 2px solid #999;
+}
+
+.xtx-bottom .bottom-copyright ul li a:hover {
+  color: #27ba9b;
+}
+
+.xtx-bottom .bottom-copyright ul li:last-child a {
+  border-right: none;
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小兔鲜儿-登录</title>
+  <!-- icon图标 -->
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+  <!-- 样式初始化 -->
+  <link rel="stylesheet" href="./css/base.css">
+  <!-- 公共样式 -->
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/commontologin.css">
+  <!-- 字体图标 -->
+  <link rel="stylesheet" href="./lib/iconfont/iconfont.css">
+  <!-- 主页样式 -->
+  <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+  <!-- 头部导航 -->
+  <header>
+    <!-- 快捷菜单 -->
+    <div class="xtx-shortcut">
+      <nav class="w">
+        <ul class="top-nav fr">
+          <li><a href="login.html">请先登录</a></li>
+          <li><a href="register.html">免费注册</a></li>
+          <li><a href="./order.html">我的订单</a></li>
+          <li><a href="./center.html">会员中心</a></li>
+          <li><a href="javascript:;">帮助中心</a></li>
+          <li class="about"><a href="javascript:;">联系我</a></li>
+          <!-- 新窗口打开 -->
+          <li class="concern"><a href="javascript:;">关注我</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+
+  <!-- 主体内容 -->
+  <section>
+    <!-- 登录头部 -->
+    <div class="xtx-login-header">
+      <h1 class="logo">
+        <a href="./index.html"></a>
+      </h1>
+      <a class="home" href="./index.html">进入网站首页</a>
+    </div>
+    <!-- 登录内容 -->
+    <div class="xtx-login-main">
+      <div class="wrapper">
+        <!-- autocomplete="off" 关闭访问记录 -->
+        <form action="" autocomplete="off">
+          <div class="box">
+            <div class="tab-nav">
+              <a href="javascript:;" class="active">账户登录</a>
+              <a href="javascript:;">二维码登录</a>
+            </div>
+            <div class="tab-pane">
+              <div class="link">
+                <a href="javascript:;">手机验证码登录</a>
+              </div>
+              <div class="input">
+                <span class="iconfont icon-zhanghao"></span>
+                <input required type="text" placeholder="请输入用户名称/手机号码" name="username">
+
+              </div>
+              <div class="input">
+                <span class="iconfont icon-suo"></span>
+                <input required type="password" placeholder="请输入密码" name="password">
+              </div>
+              <div class="agree">
+                <label for="my-checkbox">
+                  <input type="checkbox" value="1" id="my-checkbox" class="remember" name="agree">
+                  <span class="iconfont icon-xuanze"></span>
+                </label>
+                我已同意 <a href="javascript:;">《服务条款》</a href="javascript:;"> 和 <a>《服务条款》</a>
+              </div>
+              <div class="button clearfix">
+                <button type="submit" class="dl">登 录</button>
+                <!-- <a class="dl" href="./center.html">登 录</a> -->
+                <a class="fl" href="./forget.html">忘记密码？</a>
+                <a class="fr" href="./register.html">免费注册</a>
+              </div>
+            </div>
+            <div class="tab-pane" style="display: none;">
+              <img class="code" src="./images/code.png" alt="">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- 登录底部 -->
+    <div class="xtx-login-footer">
+  </section>
+  <!-- 底部 -->
+  <footer>
+    <div class="xtx-footer w">
+      <!-- 客户服务 -->
+      <div class="footer-server fl">
+        <p>客户服务</p>
+        <div class="service">在线客服</div>
+        <div class="question">问题反馈</div>
+      </div>
+      <!-- 关注我们 -->
+      <div class="footer-we fl">
+        <p>关注我们</p>
+        <div class="number">公众号</div>
+        <div class="weibo">微博</div>
+      </div>
+      <!-- 下载APP -->
+      <div class="footer-download fl">
+        <p>下载APP</p>
+        <div class="code">
+          <img src="./uploads/qrcode.png" alt="">
+        </div>
+        <div class="download">
+          <p>扫秒二维码</p>
+          <br />
+          <p>立即下载APP</p>
+          <a href="javascript:;">立即下载</a>
+        </div>
+      </div>
+      <!-- 服务热线 -->
+      <div class="footer-hotline fr">
+        <p>服务热线</p>
+        <div class="num">400-0000-000</div>
+        <span>周一至周日 8:00-18:00</span>
+      </div>
+    </div>
+
+    <div class="xtx-bottom">
+      <div class="w">
+        <div class="bottom-service">
+          <div class="bottom-box">
+            <a href="javascript:;">价格亲民</a>
+            <a href="javascript:;">物流快捷</a>
+            <a href="javascript:;">品质新鲜</a>
+          </div>
+        </div>
+        <div class="bottom-copyright">
+          <ul>
+            <li><a href="javascript:;">关于我们</a></li>
+            <li><a href="javascript:;">帮助中心</a></li>
+            <li><a href="javascript:;">售后服务</a></li>
+            <li><a href="javascript:;">配送与验收</a></li>
+            <li><a href="javascript:;">商务合作</a></li>
+            <li><a href="javascript:;">搜索推荐</a></li>
+            <li><a href="javascript:;">友情链接</a></li>
+          </ul>
+          <p>CopyRight @ A Lucky Boy</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/login.js"></script>
+  <!-- 用户登录模块 -->
+  <script src="./js/common.js"></script>
+
+</body>
+
+</html>
